@@ -1,0 +1,242 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+html {
+  box-sizing: border-box;
+  font-size: 125%;
+}
+body {
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+  height: 100vh;
+  color: #333;
+  background: linear-gradient(
+    0deg,
+    rgba(34, 193, 195, 1) 0%,
+    rgba(253, 187, 45, 1) 100%
+  );
+  text-align: center;
+}
+.scores {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.34);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  height: 50px;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.col1,
+.col2 {
+  width: 100%;
+}
+h1 {
+  margin-top: 3%;
+  margin-bottom: 3%;
+}
+.options-box {
+  background: rgba(249, 83, 83, 0.199);
+  width: 80%;
+  margin: auto;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  padding: 20px;
+  height: 340px;
+}
+.options {
+  padding-top: 40px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+
+.display-move {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.selected-move {
+  width: 100%;
+}
+.btn-new-game {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  font-weight: 500;
+  margin-top: 10px;
+  margin-left: 10px;
+  padding: 15px;
+  border-radius: 15px;
+  border: 0;
+  background-image: linear-gradient(
+    to right,
+    #3ca55c 0%,
+    #b5ac49 51%,
+    #3ca55c 100%
+  );
+  transition: 0.5s;
+  background-size: 200% auto;
+}
+.btn-new-game:hover {
+  background-position: right center;
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
+.btn-help {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-top: 10px;
+  margin-right: 10px;
+  padding: 25px;
+  border-radius: 50%;
+  border: 0;
+  background-image: linear-gradient(
+    to right,
+    #3ca55c 0%,
+    #b5ac49 51%,
+    #3ca55c 100%
+  );
+  transition: 0.5s;
+  background-size: 200% auto;
+}
+.btn-help:hover {
+  background-position: right center;
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
+.btn-continue {
+  font-weight: 500;
+  margin-top: 10px;
+  margin-left: 10px;
+  padding: 15px;
+  border-radius: 15px;
+  border: 0;
+  background-image: linear-gradient(
+    to right,
+    #50c9c3 0%,
+    #96deda 51%,
+    #50c9c3 100%
+  );
+  transition: 0.5s;
+  background-size: 200% auto;
+}
+
+.btn-continue:hover {
+  background-position: right center;
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btn-grad {
+  background-image: linear-gradient(
+    to right,
+    #50c9c3 0%,
+    #96deda 51%,
+    #50c9c3 100%
+  );
+  margin: 10px;
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+  display: block;
+}
+
+.btn-grad:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+.hidden {
+  display: none;
+}
+.options-img {
+  width: 50%;
+}
+.btn-move {
+  border: 0;
+  background: none;
+  width: 90%;
+  transition: 0.5s;
+}
+.btn-move:hover {
+  cursor: pointer;
+  width: 102%;
+  transition: 0.5s;
+}
+.result {
+  margin-top: 20px;
+  font-size: 150%;
+}
+.btn-continue {
+  margin-bottom: 55px;
+}
+.modal {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.4);
+  top: 50%;
+  left: 50%;
+  z-index: 10;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  padding: 40px;
+  border-radius: 25px;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  font-size: 20px;
+  color: #000;
+}
+.modal-close {
+  position: absolute;
+  top: 15px;
+  right: 25px;
+  font-size: 50pt;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #74cfa8;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(3px);
+  z-index: 5;
+}
+.modal-title {
+  color: #d4af37;
+}
+.modal-paragraph {
+  text-align: justify;
+  color: #bec2bc;
+}

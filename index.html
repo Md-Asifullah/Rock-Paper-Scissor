@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Rock Paper Scissor</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+  </head>
+  <body>
+    <div class="modal hidden">
+      <button class="modal-close" style="font-size: 40px">&times;</button>
+      <h2 class="modal-title">How to play Rock Paper Scissor</h2>
+      <br />
+      <p class="modal-paragraph">
+        This is a very simple game. Player may select only one option in each
+        move out of 3 options. They are rock, paper and scissor.
+      </p>
+      <br />
+      <p class="modal-paragraph">
+        <b>Below are the simple rules for scoring:</b><br /><br />
+
+        Rock can beat scissor. Paper can beat rock. Scissor can beat paper. If
+        both player draw the same move then it will be a draw. The first player
+        to score 10 points wins the game.
+      </p>
+    </div>
+    <div class="overlay hidden"></div>
+    <h1>Rock Paper Scissor</h1>
+    <button class="btn-new-game">New Game</button>
+    <button class="btn-help">Help</button>
+    <div class="scores">
+      <div class="player-score col1">
+        Player Score: <span class="score-0">#</span>
+      </div>
+      <div class="computer-score col2">
+        Computer Score: <span class="score-1">#</span>
+      </div>
+    </div>
+    <!-- This div should be hidden during showing the result of each move -->
+    <div class="options-box">
+      <h2>Select your move</h2>
+      <div class="options">
+        <div class="move">
+          <button class="btn-move btnRock">
+            <img src="img/rock.png" class="options-img" />
+          </button>
+        </div>
+        <div class="move">
+          <button class="btn-move btnPaper">
+            <img src="img/paper.png" class="options-img" />
+          </button>
+        </div>
+        <div class="move">
+          <button class="btn-move btnScissor">
+            <img src="img/scissor.png" class="options-img" />
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="display-move hidden">
+      <div class="selected-move">
+        <img src="img/rock.png" class="options-img playerMoveImage" />
+      </div>
+      <div class="selected-move">
+        <img src="img/paper.png" class="options-img computerMoveImage" />
+      </div>
+    </div>
+    <div class="result hidden">
+      <h2 class="msg">You won!</h2>
+    </div>
+    <!-- This div should be shown during showing the result of each move -->
+    <div><button class="btn-continue hidden">Continue</button></div>
+    <script src="main.js"></script>
+  </body>
+</html>
